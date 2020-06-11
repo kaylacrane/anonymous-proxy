@@ -1,7 +1,13 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background: url("../images/logo-adalab.png") center center no-repeat
-    $color-white;
-  font-family: $font-main;
+// body {
+//   padding: 2rem;
+//   height: 100vh;
+//   background: url("../images/logo-adalab.png") center center no-repeat
+//     $color-white;
+//   font-family: $font-main;
+// }
+
+.header,
+.main,
+.footer {
+  border: 1px green solid;
 }
