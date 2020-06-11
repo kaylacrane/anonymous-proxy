@@ -1,6 +1,6 @@
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-`# Módulo 1: Ejercicio de evaluación final`
+# `Módulo 1: Ejercicio de evaluación final`
 
 ## Recursos
 
