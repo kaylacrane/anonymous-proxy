@@ -1,5 +1,14 @@
-// .page__header {
-//   display: flex;
-//   justify-content: space-evenly;
-//   margin-bottom: 3rem;
-// }
+.header {
+  background-image: asset("images", "cover.jpg");
+  background-position: center top;
+  height: 100vh;
+
+  &__menu-button {
+    background-color: $color-accents;
+    width: fit-content;
+    padding: 15px 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
