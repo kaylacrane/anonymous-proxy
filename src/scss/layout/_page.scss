@@ -6,16 +6,20 @@
 //   font-family: $font-main;
 // }
 
-.header,
-.main,
-.footer {
-  border: 1px green solid;
-}
-
 .wrapper {
   padding: 45px 15px;
+  max-width: 1200px;
+  margin: auto;
 
   @include tablet {
     padding: 45px 39px;
   }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

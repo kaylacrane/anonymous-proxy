@@ -1,8 +1,66 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
-// }
+.footer {
+  width: 100%;
+  background-color: $color-dark;
+  position: relative;
+
+  .button-round {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    @include desktop {
+      justify-content: center;
+    }
+  }
+
+  &__menu--sections,
+  &__menu--socialMedia {
+    padding: 0 15px 20px;
+    font-weight: $font-weight-lt;
+
+    @include desktop {
+      margin: 0 20px;
+    }
+    a {
+      display: inline-block;
+      color: $color-white;
+      font-size: rem(16);
+      text-transform: uppercase;
+      padding: 6px;
+    }
+  }
+
+  &__copyBlock {
+    @include tablet {
+      order: -1;
+    }
+    @include desktop {
+      margin: 0 20px;
+    }
+  }
+  &__copyBlock small {
+    display: block;
+    color: $color-white;
+    font-size: rem(14);
+    padding: 10px;
+
+    .heart {
+      color: $color-contrast;
+      padding: 0 1px;
+    }
+  }
+}

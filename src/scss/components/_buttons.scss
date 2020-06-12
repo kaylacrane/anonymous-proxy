@@ -13,7 +13,6 @@
   border-radius: 20px;
   width: fit-content;
   padding: 0px 20px;
-  position: relative;
   color: $color-contrast;
 }
 .button-contrast {
@@ -26,5 +25,5 @@
   padding: 3px 13px;
   border: none;
   background-color: $color-white;
-  box-shadow: 0px 0px 5px $color-grey;
+  box-shadow: 0px 0px 3px $color-grey;
 }
