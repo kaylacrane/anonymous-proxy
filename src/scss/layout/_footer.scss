@@ -9,6 +9,11 @@
     transform: translate(-50%, -50%);
   }
 
+  .button-contents {
+    position: relative;
+    transform: translateY(10%);
+  }
+
   .wrapper {
     display: flex;
     flex-direction: column;
