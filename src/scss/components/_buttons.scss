@@ -13,6 +13,7 @@
   width: fit-content;
   padding: 0px 25px;
   color: $color-contrast;
+  transition: all 0.75s;
   @include tablet {
     padding: 0 32px;
   }
@@ -20,11 +21,16 @@
     padding: 0 65px;
   }
   &:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 .button-contrast {
   background-color: $color-contrast;
   color: $color-white;
+  transition: all 0.75 ease;
+
   @include tablet {
     padding: 0 42px;
   }
@@ -40,4 +46,9 @@
   background-color: $color-white;
   box-shadow: 0px 0px 3px $color-grey;
   height: fit-content;
+  &:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
