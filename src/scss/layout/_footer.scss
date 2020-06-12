@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 60px 15px 45px;
 
     @include tablet {
       flex-direction: row;

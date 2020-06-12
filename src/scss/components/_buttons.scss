@@ -11,12 +11,26 @@
   border: 2px $color-contrast solid;
   border-radius: 20px;
   width: fit-content;
-  padding: 0px 20px;
+  padding: 0px 25px;
   color: $color-contrast;
+  @include tablet {
+    padding: 0 32px;
+  }
+  @include desktop {
+    padding: 0 65px;
+  }
+  &:hover {
+  }
 }
 .button-contrast {
   background-color: $color-contrast;
   color: $color-white;
+  @include tablet {
+    padding: 0 42px;
+  }
+  @include desktop {
+    padding: 0 64px;
+  }
 }
 
 .button-round {
