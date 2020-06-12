@@ -1,5 +1,61 @@
-// .page__header {
-//   display: flex;
-//   justify-content: space-evenly;
-//   margin-bottom: 3rem;
-// }
+.header {
+  &__menu-button {
+    background-color: $color-accents;
+    width: fit-content;
+    padding: 12px 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: asset("images", "cover.jpg");
+    background-position: center top;
+    height: 100vh;
+    background-size: cover;
+
+    @include desktop {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: $font-titles;
+    font-size: rem(42);
+    color: $color-white;
+    letter-spacing: 1.5px;
+
+    @include tablet {
+      font-size: rem(80);
+      padding: 20px;
+    }
+    @include desktop {
+      font-size: rem(100);
+    }
+
+    span {
+      display: inline-block;
+      padding: 10px 0;
+    }
+  }
+
+  &__claim {
+    font-size: rem(16);
+    font-weight: $font-weight-reg;
+    color: $color-white;
+    margin-bottom: 45px;
+    letter-spacing: 1.2px;
+    @include tablet {
+      font-size: rem(24);
+    }
+  }
+}

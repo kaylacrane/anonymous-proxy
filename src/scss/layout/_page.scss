@@ -11,3 +11,11 @@
 .footer {
   border: 1px green solid;
 }
+
+.wrapper {
+  padding: 45px 15px;
+
+  @include tablet {
+    padding: 45px 39px;
+  }
+}
