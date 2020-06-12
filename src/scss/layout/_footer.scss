@@ -3,9 +3,10 @@
   background-color: $color-dark;
   position: relative;
 
-  .button .button-round {
+  .button-round {
     position: absolute;
-    transform: translate -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .wrapper {
