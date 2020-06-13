@@ -1,9 +1,4 @@
 .main__articles {
-  // .wrapper {
-  //   @include desktop {
-  //     scroll-padding-top: 60;
-  //   }
-  // }
   &--post {
     h2 {
       font-size: rem(24);
@@ -30,6 +25,7 @@
   &--postCategory {
     display: block;
     font-size: rem(14);
+    font-weight: $font-weight-lt;
     color: $color-light;
     letter-spacing: 1.2px;
     text-transform: capitalize;

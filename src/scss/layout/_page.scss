@@ -1,10 +1,16 @@
-// body {
-//   padding: 2rem;
-//   height: 100vh;
-//   background: url("../images/logo-adalab.png") center center no-repeat
-//     $color-white;
-//   font-family: $font-main;
-// }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $default-font-size;
+}
 
 .wrapper {
   padding: 30px 15px 45px;
@@ -17,12 +23,4 @@
   @include desktop {
     padding: 60px 275px;
   }
-}
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }

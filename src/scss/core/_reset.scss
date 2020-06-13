@@ -349,14 +349,3 @@ template {
 [hidden] {
   display: none;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: $font-main;
-  font-size: 18px;
-}

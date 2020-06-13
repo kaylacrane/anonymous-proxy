@@ -21,16 +21,22 @@
     margin-bottom: 45px;
     @include tablet {
       grid-column: span 3;
+      font-size: rem(26);
     }
   }
   &--block {
     padding: 0 55px 45px;
-    &h3 {
-      font-family: $font-titles;
-    }
+    line-height: 1.6;
     @include tablet {
       grid-column: span 1;
       padding: 0;
+    }
+    h3 {
+      font-family: $font-titles;
+      font-size: rem(18);
+    }
+    p {
+      font-size: rem(18);
     }
   }
   .button {
