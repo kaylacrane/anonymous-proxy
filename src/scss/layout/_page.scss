@@ -12,7 +12,10 @@
   margin: auto;
 
   @include tablet {
-    padding: 45px 39px;
+    padding: 30px 39px 45px;
+  }
+  @include desktop {
+    padding: 60px 275px;
   }
 }
 

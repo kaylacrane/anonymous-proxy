@@ -1,7 +1,9 @@
 .main__articles {
-  @include desktop {
-    padding-top: 15px;
-  }
+  // .wrapper {
+  //   @include desktop {
+  //     scroll-padding-top: 60;
+  //   }
+  // }
   &--post {
     h2 {
       font-size: rem(24);
