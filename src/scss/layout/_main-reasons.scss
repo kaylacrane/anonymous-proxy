@@ -1,0 +1,52 @@
+.main__reasons {
+  background-color: $color-light2;
+  text-align: center;
+
+  .wrapper {
+    padding-bottom: 60px;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include desktop {
+      padding-left: 85px;
+      padding-right: 85px;
+    }
+  }
+
+  &--title {
+    font-size: rem(24);
+    font-family: $font-titles;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+    @include tablet {
+      grid-column: span 3;
+    }
+  }
+  &--block {
+    padding: 0 55px 45px;
+    &h3 {
+      font-family: $font-titles;
+    }
+    @include tablet {
+      grid-column: span 1;
+      padding: 0;
+    }
+  }
+  .button {
+    margin: 0 auto;
+    @include tablet {
+      grid-column: span 3;
+      margin: 60px auto 0;
+    }
+  }
+}
+
+@include tablet {
+  .main__reasons--block:not(:first-child) {
+    margin-left: 14px;
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+}
