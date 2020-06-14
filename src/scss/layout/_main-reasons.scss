@@ -3,10 +3,12 @@
   text-align: center;
 
   .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 60px;
     @include tablet {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 25px;
     }
     @include desktop {
       padding-left: 85px;
@@ -15,44 +17,47 @@
   }
 
   &--title {
+    grid-column: span 3;
     font-size: rem(24);
     font-family: $font-titles;
     text-transform: capitalize;
     margin-bottom: 45px;
     @include tablet {
-      grid-column: span 3;
       font-size: rem(26);
+    }
+    @include desktop {
+      font-size: rem(32);
     }
   }
   &--block {
+    grid-column: span 3;
     padding: 0 55px 45px;
     line-height: 1.6;
     @include tablet {
       grid-column: span 1;
       padding: 0;
     }
-    h3 {
+    &Title {
       font-family: $font-titles;
       font-size: rem(18);
+      @include tablet {
+        font-size: rem(24);
+        margin-bottom: 14px;
+      }
     }
-    p {
+    &Text {
       font-size: rem(18);
+      @include tablet {
+        font-size: rem(20);
+      }
     }
   }
   .button {
     margin: 0 auto;
+    grid-column: span 3;
     @include tablet {
       grid-column: span 3;
       margin: 60px auto 0;
-    }
-  }
-}
-
-@include tablet {
-  .main__reasons--block:not(:first-child) {
-    margin-left: 14px;
-    &:not(:last-child) {
-      margin-right: 14px;
     }
   }
 }

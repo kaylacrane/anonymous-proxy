@@ -20,7 +20,6 @@
     align-items: center;
     text-align: center;
     padding-top: 60px;
-
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
@@ -28,7 +27,6 @@
       align-items: flex-start;
       padding-top: 45px;
     }
-
     @include desktop {
       justify-content: center;
     }
@@ -38,7 +36,6 @@
   &__menu--socialMedia {
     padding: 0 15px 20px;
     font-weight: $font-weight-lt;
-
     @include desktop {
       margin: 0 20px;
     }
@@ -59,6 +56,7 @@
       margin: 0 20px;
     }
   }
+
   &__copyBlock small {
     display: block;
     color: $color-white;
