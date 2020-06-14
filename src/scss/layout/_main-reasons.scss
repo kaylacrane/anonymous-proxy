@@ -7,7 +7,6 @@
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 60px;
     @include tablet {
-      display: grid;
       grid-column-gap: 25px;
     }
     @include desktop {

@@ -3,12 +3,6 @@
   background-color: $color-dark;
   position: relative;
 
-  .button-round {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   .button-contents {
     position: relative;
     transform: translateY(10%);
@@ -55,17 +49,16 @@
     @include desktop {
       margin: 0 20px;
     }
-  }
+    &--copyText {
+      display: block;
+      color: $color-white;
+      font-size: rem(14);
+      padding: 10px;
 
-  &__copyBlock small {
-    display: block;
-    color: $color-white;
-    font-size: rem(14);
-    padding: 10px;
-
-    .heart {
-      color: $color-contrast;
-      padding: 0 1px;
+      .heart {
+        color: $color-contrast;
+        padding: 0 1px;
+      }
     }
   }
 }
