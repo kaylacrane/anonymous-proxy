@@ -28,7 +28,7 @@
 
   &__menu--sections,
   &__menu--socialMedia {
-    padding: 0 15px 20px;
+    padding: 0 15px 30px;
     font-weight: $font-weight-lt;
     @include desktop {
       margin: 0 20px;
@@ -39,6 +39,9 @@
       font-size: rem(16);
       text-transform: uppercase;
       padding: 6px;
+      &:hover {
+        text-shadow: 0 5px 10px $color-white;
+      }
     }
   }
 

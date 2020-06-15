@@ -1,4 +1,7 @@
 .main__articles {
+  .wrapper {
+    padding-bottom: 60px;
+  }
   &--post {
     &Title {
       font-size: rem(24);

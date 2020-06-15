@@ -48,12 +48,13 @@
 
   &__claim {
     font-size: rem(16);
-    font-weight: $font-weight-reg;
+    font-weight: $font-weight-lt;
     color: $color-white;
     margin-bottom: 45px;
     letter-spacing: 1.2px;
     @include tablet {
       font-size: rem(24);
+      margin-bottom: 30px;
     }
   }
 }
