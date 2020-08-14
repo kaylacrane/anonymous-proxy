@@ -30,8 +30,9 @@
   }
   &--block {
     grid-column: span 3;
-    padding: 0 55px 45px;
+    padding: 0 55px 0px;
     line-height: 1.6;
+
     @include tablet {
       grid-column: span 1;
       padding: 0;
@@ -46,13 +47,15 @@
     }
     &Text {
       font-size: rem(18);
+      margin-bottom: 15px;
+
       @include tablet {
         font-size: rem(20);
       }
     }
   }
   .button {
-    margin: 0 auto;
+    margin: 0 auto 20px;
     grid-column: span 3;
     @include tablet {
       grid-column: span 3;

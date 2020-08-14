@@ -3,6 +3,13 @@
   background-color: $color-dark;
   position: relative;
 
+  .button {
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+
   .button-contents {
     position: relative;
     transform: translateY(10%);
@@ -46,8 +53,10 @@
   }
 
   &__copyBlock {
+    order: -1;
+    padding-bottom: 15px;
     @include tablet {
-      order: -1;
+      order: 0;
     }
     @include desktop {
       margin: 0 20px;
